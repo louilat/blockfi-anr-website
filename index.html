@@ -1,122 +1,254 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANR BLOCKFI — Blockchain and Decentralized Finance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Source+Sans+3&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-<html>
-	<head>
-		<title>ANR BLOCKFI</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="landing is-preload">
-		<div id="page-wrapper">
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="banner__content">
+            <img id="banner-svg" src="./images/anr_blockfi_logo.svg" alt="ANR BLOCKFI Logo">
+            <script>
+              document.getElementById('banner-svg').src =
+                './images/anr_blockfi_logo.svg?t=' + Date.now();
+            </script>
+            <h1 class="banner__title">
+                <span>Blockchain and</span>
+                <span>Decentralized Finance</span>
+            </h1>
+            <div class="banner__logos">
+                <img src="images/logoX.png" alt="École Polytechnique" class="banner__logo">
+                <img src="images/logoCrest.png" alt="CREST" class="banner__logo">
+                <img src="images/logoGren.png" alt="Laboratoire d'Informatique de Grenoble" class="banner__logo" style="padding: 1rem 0">
+            </div>
+        </div>
+    </section>
 
-			<!-- Header -->
-			<header id="header" class="alt">
-				<h1><a href="index.html">ANR: BLOCKFI</a></h1>
-				<nav id="nav">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="Topics.html">Topics</a></li>
-						<li><a href="Members.html">Members</a></li>
-						<li><a href="Publications.html">Publications</a></li>
-						
-						
-					</ul>
-				</nav>
-			</header>
-			
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__content">
+                    <span class="section-label">The ANR BlockFi Project</span>
+                    <p>
+                        Decentralised Finance (DeFi) refers to applications running on public blockchains that aim to replicate and extend some traditional financial functionalities without relying on centralised intermediaries. Over the last decade, DeFi has grown at a rapid pace, giving rise to algorithmic and financial innovations with spillover effects beyond the boundaries of crypto markets alone.
+                    </p>
+                    <p>
+                        Unlike traditional finance (TradFi), which depends on banks, brokers, and regulated exchanges, DeFi protocols operate through smart contracts: self-executing code deployed on a blockchain. This enables permissionless lending and borrowing, accessible staking, and has led to the emergence of decentralised exchanges taking unprecedented forms — all running transparently and continuously, without human intermediaries. While this opens remarkable possibilities, it also introduces new theoretical and practical questions.
+                    </p>
+                    <p>
+                        The mathematical and statistical modelling of DeFi protocols remains in its infancy. Rigorous quantitative methods are needed to understand the structural properties of these systems, assess their risks, and design more robust next-generation protocols. The ANR BlockFi project addresses this gap by fostering the development of mathematical models, statistical tools, and formal verification methods. Topics under study include the design of interest rate models on lending protocols, the mechanics of automated market makers (AMMs), the application of formal proofs to protocols, asset management questions in the DeFi world, and the study of systemic risk.
+                    </p>
+                    <p>
+                        To tackle these challenges, we have assembled an interdisciplinary team of mathematicians, statisticians, economists, and computer scientists. Beyond producing research, our ambition is to make these emerging scientific questions visible to the broader academic community and to train the next generation of researchers.
+                    </p>
+                </div>
 
-			<!-- Banner -->
-				<section id="banner">
-					<h2>Blockchain and Decentralized Finance – BLOCKFI</h2>
-					<p>Interfaces: Mathematics, Digital Sciences – Humanities and Social Sciences</p>
-				</section>
+                <div class="about__image">
+                    <div class="about__meta">
+                        <div class="about__meta-logo">
+                            <a href="https://anr.fr/Projet-ANR-24-CE38-7885" target="_blank" rel="noopener noreferrer">
+                                <img src="images/anr-logo-2021-complet.png" alt="ANR Logo">
+                            </a>
+                        </div>
+                        <div class="about__meta-item">
+                            <span class="about__meta-label">Project start</span>
+                            <span class="about__meta-value">September 2024</span>
+                        </div>
+                        <div class="about__meta-item">
+                            <span class="about__meta-label">Duration</span>
+                            <span class="about__meta-value">60 months</span>
+                        </div>
+                        <div class="about__meta-item">
+                            <span class="about__meta-label">ANR reference</span>
+                            <span class="about__meta-value">ANR-24-CE38-7885</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<!-- Main -->
-				<section id="main" class="container">
+    <!-- Members Section -->
+    <section class="members">
+        <div class="container">
+            <div class="members__header">
+                <span class="section-label">Project Members</span>
+            </div>
+            <div class="members__grid">
 
-					<section class="box special">
-						<header class="major">
-							<h2>What about us:</h2>
-							<p>The mathematical modelling of DeFi protocols, the risk assessement of this new ecosystem, the statistical
-								modelling of related data are topics in their infancy within the academic literature. The few available
-								research works are mostly under preprints, submitted for publications, some are cited in the following
-								Work Packages. Nonetheless, the needs for quantitative methods and tools are of paramount importance.
-								Our ambition is to help transform these beginnings of work on these subjects into a real, strong, visible
-								academic research stream.					</header>
-						<span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
-					</section>
-
-					<section class="box special news">
-						<div class="news-content">
-							<h3>Latest News</h3>
-							<ul class="news-list">
-								<li>
-									<div class="event-indicator">
-										<span class="point"></span> <!-- Point pour l'événement -->
-										<strong>[BlockFi] Launch Day - Tuesday, January 7th: 
-											<a href="Slide_Kick_off.html" class="slide-button">Slide</a> <!-- Bouton "Slide" -->
-										</strong>
-									</div>
-								</li>
-								<!-- Vous pouvez ajouter d'autres actualités ici -->
-							</ul>
-						</div>
-					</section>
-
-					<section class="box special news">
-						<div class="news-content">
-							<h3>Job Openings (soon)</h3>
-							<!--<ul class="news-list">
-								<li>
-									<div class="event-indicator">
-										<span class="point"></span> 
-										<strong>[BlockFi] Journée de lancement - mardi 7 janvier: 
-											<a href="Slide_journée_de_lancement.html" class="slide-button">Slide</a> 
-										</strong>
-									</div>
-								</li>
-							 c'est un exemple-->
-								<!-- Vous pouvez ajouter d'autres actualités ici -->
-							</ul>
-						</div>
-					</section>
-					
-					
-					
-					
-					
-	
-
-				</section>
-
-
-
-			<!-- Footer -->
-			<footer id="footer">
-				<div class="contact-info">
-					<p>Contact us: <a href="emmanuel.gobet@polytechnique.edu">contact@example.com</a></p>
-				</div>
-				<div class="logo-container">
-					<img src="images/logoX.png" alt="Logo 1" class="footer-logo">
-					<img src="images/logoCrest.png" alt="Logo 2" class="footer-logo">
-					<img src="images/logoGren.png" alt="Logo 3" class="footer-logo">
-				</div>
+                <article class="member-card">
+                    <a href="https://charles-bertucci.github.io/" target="_blank" rel="noopener">
+                        <img src="images/photo_charles.png" alt="Charles Bertucci" class="member-card__photo">
+                    </a>
+                    <h3 class="member-card__name">
+                        <a href="https://charles-bertucci.github.io/" target="_blank" rel="noopener">Charles Bertucci</a>
+                    </h3>
+                    <p class="member-card__role">CR CNRS, Université Paris Dauphine-PSL, Mathematician, expert in modeling and game theory.</p>
+                </article>
 				
-			</footer>
-			
-			
+				<article class="member-card">
+                    <a href="https://sites.google.com/view/louisbertucci/home" target="_blank" rel="noopener">
+                        <img src="images/photo_louis.jpg" alt="Louis Bertucci" class="member-card__photo">
+                    </a>
+                    <h3 class="member-card__name">
+                        <a href="https://sites.google.com/view/louisbertucci/home" target="_blank" rel="noopener">Louis Bertucci</a>
+                    </h3>
+                    <p class="member-card__role">ILB Research engineer, Researcher in Finance, expert in blockchain and DeFi.</p>
+                </article>
+				
+				<article class="member-card">
+                    <a href="http://www.cmap.polytechnique.fr/~demarco/" target="_blank" rel="noopener">
+                        <img src="images/photo_stefano.jpg" alt="Stefano De Marco" class="member-card__photo">
+                    </a>
+                    <h3 class="member-card__name">
+                        <a href="http://www.cmap.polytechnique.fr/~demarco/" target="_blank" rel="noopener">Stefano De Marco</a>
+                    </h3>
+                    <p class="member-card__role">PR Polytechnique, Mathematician, expert in stochastic modeling and financial risk management.</p>
+                </article>
+				
+				<article class="member-card">
+                    <a href="https://lig-membres.imag.fr/mechenim/" target="_blank" rel="noopener">
+                        <img src="images/photo_mnacho.jpg" alt="Mnacho Echenim" class="member-card__photo">
+                    </a>
+                    <h3 class="member-card__name">
+                        <a href="https://lig-membres.imag.fr/mechenim/" target="_blank" rel="noopener">Mnacho Echenim</a>
+                    </h3>
+                    <p class="member-card__role">PR, Université Grenoble Alpes, Computer scientist, expert in automated reasoning and finance.</p>
+                </article>
 
-		</div>
+                <article class="member-card">
+                    <a href="http://www.cmap.polytechnique.fr/~gobet/" target="_blank" rel="noopener">
+                        <img src="images/photo_emmanuel.jpg" alt="Emmanuel Gobet" class="member-card__photo">
+                    </a>
+                    <h3 class="member-card__name">
+                        <a href="http://www.cmap.polytechnique.fr/~gobet/" target="_blank" rel="noopener">Emmanuel Gobet</a>
+                    </h3>
+                    <p class="member-card__role">PR, Sorbonne Université, Mathematician, expert in stochastic and statistical modeling, expert in DeFi.</p>
+                </article>
+				<article class="member-card">
+                    <a href="http://pierre-olivier.goffard.me/" target="_blank" rel="noopener">
+                        <img src="images/photo_pierre.jpg" alt="Pierre-Olivier Goffard" class="member-card__photo">
+                    </a>
+                    <h3 class="member-card__name">
+                        <a href="http://pierre-olivier.goffard.me/" target="_blank" rel="noopener">Pierre-Olivier Goffard</a>
+                    </h3>
+                    <p class="member-card__role">MCF UNISTRA, Actuary and Mathematician, expert in risk modeling and blockchain.</p>
+                </article>
+				
+				<article class="member-card">
+                    <a href="https://www.oliviergueant.com/" target="_blank" rel="noopener">
+                        <img src="images/photo_olivier.jpg" alt="Olivier Guéant" class="member-card__photo">
+                    </a>
+                    <h3 class="member-card__name">
+                        <a href="https://www.oliviergueant.com/" target="_blank" rel="noopener">Olivier Guéant</a>
+                    </h3>
+                    <p class="member-card__role">PR Université Paris Cité, Mathematician, expert in stochastic finance and DeFi.</p>
+                </article>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                <article class="member-card">
+                    <a href="https://membres-lig.imag.fr/peltier/" target="_blank" rel="noopener">
+                        <img src="images/photo_nicolas.png" alt="Nicolas Peltier" class="member-card__photo">
+                    </a>
+                    <h3 class="member-card__name">
+                        <a href="https://membres-lig.imag.fr/peltier/" target="_blank" rel="noopener">Nicolas Peltier</a>
+                    </h3>
+                    <p class="member-card__role">CR CNRS, Computer scientist, automated reasoning and logic.</p>
+                </article>
+				
+				<article class="member-card">
+                    <a href="https://sites.google.com/site/julienpratecon/home" target="_blank" rel="noopener">
+                        <img src="images/photo_julien.jpg" alt="Julien Prat" class="member-card__photo">
+                    </a>
+                    <h3 class="member-card__name">
+                        <a href="https://sites.google.com/site/julienpratecon/home" target="_blank" rel="noopener">Julien Prat</a>
+                    </h3>
+                    <p class="member-card__role">DR CNRS, Ecole Polytechnique, Economist, expert in incentives theory and blockchain.</p>
+                </article>
 
-	</body>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news">
+        <div class="container">
+            <div class="news__header">
+                <span class="section-label">News & Events</span>
+            </div>
+            <div class="news__grid">
+
+                <article class="news-card">
+                    <p class="news-card__date">January 7, 2025</p>
+                    <h3 class="news-card__title">BLOCKFI Launch Day</h3>
+                    <p class="news-card__description">
+                        Official kick-off of the ANR BLOCKFI at Palais Brongniart, Paris.
+                    </p>
+                </article>
+				
+				<article class="news-card">
+                    <p class="news-card__date">May 13, 2025</p>
+                    <h3 class="news-card__title">DeFi Workshop</h3>
+                    <p class="news-card__description">
+                        Workshop organised by the ANR BLOCKFI at Maison des Sciences Economiques, Paris.
+                    </p>
+                </article>
+				
+				<article class="news-card">
+                    <p class="news-card__date">December 15-16, 2025</p>
+                    <h3 class="news-card__title">DeFi Workshop</h3>
+                    <p class="news-card__description">
+                        Two-day workshop organised by the ANR BLOCKFI at LIG, Grenoble.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="publications">
+        <div class="publications__inner">
+            <span class="section-label" style="text-align: center;">Research Output</span>
+
+            <div class="pub-category">
+                <h3 class="pub-category__title">Preprints</h3>
+
+                <div class="pub-item">
+                    <div class="pub-item__content">
+                        M. Echenim, E. Gobet, A.C. Maurice, <em>Thorough mathematical modeling and analysis of Uniswap v3</em>.
+                        In revision for SIAM Journal on Financial Mathematics, 2025.
+                        <a href="https://hal.science/hal-04214315/" class="pub-item__link" target="_blank" rel="noopener">HAL</a>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-item__content">
+                        P.O. Goffard &amp; Stéphane Loisel, <em>Collaborative and parametric insurance on the Ethereum blockchain</em>, 2024.
+                        <a href="https://hal.science/hal-04817558" class="pub-item__link" target="_blank" rel="noopener">HAL</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pub-category">
+                <h3 class="pub-category__title">Published</h3>
+                <p style="color: var(--text-muted); font-style: italic;">Coming soon...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__contact">
+            <p>Contact us: <a href="mailto:blockfi@cmap.polytechnique.fr">blockfi@cmap.polytechnique.fr</a></p>
+        </div>
+    </footer>
+
+</body>
 </html>
