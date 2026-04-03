@@ -5,4 +5,7 @@ The ANR BLOCKFI project focuses on Blockchain and Decentralized Finance (DeFi), 
 
 ## Website
 
-This repository contains the project's website, built as a static site with HTML5, CSS, and JavaScript. To view locally, open `index.html` in a browser.
+This repository contains the project's website, built as a static site with HTML5, CSS, and JavaScript.  
+[View the live website](https://louilat.github.io/blockfi-anr-website)  
+
+To view locally, open `index.html` in a browser.
