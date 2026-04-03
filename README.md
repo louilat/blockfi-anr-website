@@ -1,35 +1,8 @@
-Alpha by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# ANR BLOCKFI Project
+[![pages-build-deployment](https://github.com/louilat/blockfi-anr-website/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/louilat/blockfi-anr-website/actions/workflows/pages/pages-build-deployment)
 
+The ANR BLOCKFI project focuses on Blockchain and Decentralized Finance (DeFi), addressing the mathematical and statistical modeling of DeFi protocols. DeFi applications on public blockchains replicate traditional financial functionalities without centralized intermediaries, enabling permissionless lending, borrowing, and decentralized exchanges through smart contracts. The project aims to develop rigorous quantitative methods to understand DeFi's structural properties, assess risks, and design robust protocols. Key topics include interest rate models for lending protocols, automated market makers (AMMs), formal verification, asset management, and systemic risk analysis. An interdisciplinary team of mathematicians, statisticians, economists, and computer scientists is working to advance these areas and train future researchers.
 
-A clean, super minimal responsive template geared towards startups, app devs, and other
-dedicated folks working tirelessly to launch their products. Includes a landing page,
-generic page, contact page, and a page with a whole mess of pre-styled elements (something
-new I'm trying out). Sass sources are also included.
+## Website
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
-
-(* = Not included)
-
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
-
-AJ
-aj@lkn.io | @ajlkn
-
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
-
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+This repository contains the project's website, built as a static site with HTML5, CSS, and JavaScript. To view locally, open `index.html` in a browser.
