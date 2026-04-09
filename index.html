@@ -8,6 +8,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Source+Sans+3&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <svg style="display:none">
+        <defs>
+            <symbol id="slides-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="12" y1="18" x2="12" y2="12"/>
+                <line x1="9" y1="15" x2="15" y2="15"/>
+            </symbol>
+        </defs>
+    </svg>
 </head>
 <body>
 
@@ -185,6 +195,7 @@
             </div>
             <div class="news__grid">
 
+                <!-- Simple card — no program -->
                 <article class="news-card">
                     <p class="news-card__date">January 7, 2025</p>
                     <h3 class="news-card__title">BLOCKFI Launch Day</h3>
@@ -192,8 +203,9 @@
                         Official kick-off of the ANR BLOCKFI at Palais Brongniart, Paris.
                     </p>
                 </article>
-				
-				<article class="news-card">
+
+                <!-- Simple card -->
+                <article class="news-card">
                     <p class="news-card__date">May 13, 2025</p>
                     <h3 class="news-card__title">DeFi Workshop</h3>
                     <p class="news-card__description">
@@ -202,12 +214,164 @@
                 </article>
 				
 				<article class="news-card">
-                    <p class="news-card__date">December 15-16, 2025</p>
+                    <p class="news-card__date">December 15–16, 2025</p>
                     <h3 class="news-card__title">DeFi Workshop</h3>
                     <p class="news-card__description">
                         Two-day workshop organised by the ANR BLOCKFI at LIG, Grenoble.
                     </p>
                 </article>
+
+                <!-- Expandable card — DeFi Minicourse -->
+                <article class="news-card news-card--expandable" data-expanded="false">
+                    <div class="news-card__summary">
+                        <p class="news-card__date">April 3, 10 &amp; 17, 2025</p>
+                        <h3 class="news-card__title">DeFi Minicourse</h3>
+                        <p class="news-card__description">
+                            Three DeFi mini course sessions organized as part of <em>Séminaire Bachelier</em> at Institut Henri Poincaré, Paris.
+                        </p>
+                    </div>
+                    <button class="news-card__toggle" aria-expanded="false" aria-controls="program-defi-minicourse">
+                        <span class="news-card__toggle-label">View programme</span>
+                        <svg class="news-card__toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+
+                    <div class="news-card__program" id="program-defi-minicourse" aria-hidden="true">
+                        <div class="program">
+
+                            <div class="program__session">
+                                <div class="program__session-header">
+                                    <span class="program__session-date">April 3, 2025</span>
+                                    <span class="program__session-theme">Introduction to Blockchain &amp; DeFi</span>
+                                </div>
+                                <div class="program__talks">
+
+                                    <div class="program__talk">
+                                        <div class="program__talk-meta">
+                                            <span class="program__talk-time">9:00 – 10:00</span>
+                                            <div class="program__talk-info">
+                                                <span class="program__talk-speaker">Julien Prat</span>
+                                                <span class="program__talk-affil">CNRS, CREST</span>
+                                            </div>
+                                            <a href="pdf/minicourse-bachelier/minicourse-week1-1-prat.pdf" class="program__talk-slides" title="Download slides" target="_blank" rel="noopener noreferrer">
+                                                <svg aria-hidden="true"><use href="#slides-icon"></use></svg>
+                                                Slides
+                                            </a>
+                                        </div>
+                                        <p class="program__talk-title">Introduction to Blockchain Technology and Smart Contracts</p>
+                                        <p class="program__talk-abstract">An introduction to blockchain technology, from its origins with the Bitcoin protocol to its fundamental principles (distributed ledger, consensus mechanisms, cryptographic security), through to the emergence of smart contracts with Ethereum and decentralised applications.</p>
+                                    </div>
+
+                                    <div class="program__talk">
+                                        <div class="program__talk-meta">
+                                            <span class="program__talk-time">10:00 – 11:00</span>
+                                            <div class="program__talk-info">
+                                                <span class="program__talk-speaker">Philippe Redaelli</span>
+                                                <span class="program__talk-affil">Kaiko</span>
+                                            </div>
+                                            <a href="pdf/minicourse-bachelier/minicourse-week1-2-redaelli.pdf" class="program__talk-slides" title="Download slides" target="_blank" rel="noopener noreferrer">
+                                                <svg aria-hidden="true"><use href="#slides-icon"></use></svg>
+                                                Slides
+                                            </a>
+                                        </div>
+                                        <p class="program__talk-title">The DeFi Market: Actors and Perspectives</p>
+                                        <p class="program__talk-abstract">An overview of decentralised finance — financial services built on blockchain and smart contracts operating without intermediaries. The talk covers open protocols for lending, borrowing, and asset exchange, as well as key challenges around regulation, security, and financial stability.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Session 2 -->
+                            <div class="program__session">
+                                <div class="program__session-header">
+                                    <span class="program__session-date">April 10, 2025</span>
+                                    <span class="program__session-theme">Automated Market Makers</span>
+                                </div>
+                                <div class="program__talks">
+
+                                    <div class="program__talk">
+                                        <div class="program__talk-meta">
+                                            <span class="program__talk-time">9:00 – 10:00</span>
+                                            <div class="program__talk-info">
+                                                <span class="program__talk-speaker">Olivier Guéant</span>
+                                                <span class="program__talk-affil">Paris Cité Univ., LPSM</span>
+                                            </div>
+                                            <a href="#" class="program__talk-slides" title="Download slides">
+                                                <svg aria-hidden="true"><use href="#slides-icon"></use></svg>
+                                                Slides
+                                            </a>
+                                        </div>
+                                        <p class="program__talk-title">Introduction to AMMs: a Comparative Perspective</p>
+                                        <p class="program__talk-abstract">An introduction to automated market makers and how they compare to other trading mechanisms such as limit-order books and request-for-quote systems.</p>
+                                    </div>
+
+                                    <div class="program__talk">
+                                        <div class="program__talk-meta">
+                                            <span class="program__talk-time">10:00 – 11:00</span>
+                                            <div class="program__talk-info">
+                                                <span class="program__talk-speaker">Emmanuel Gobet</span>
+                                                <span class="program__talk-affil">Sorbonne Univ., LPSM</span>
+                                            </div>
+                                            <a href="#" class="program__talk-slides" title="Download slides">
+                                                <svg aria-hidden="true"><use href="#slides-icon"></use></svg>
+                                                Slides
+                                            </a>
+                                        </div>
+                                        <p class="program__talk-title">Quantitative Modelling of Uniswap v2 and v3</p>
+                                        <p class="program__talk-abstract">Starting from the open-source code, this talk describes Uniswap v2 and v3 in detail — including concentrated liquidity, fee collection, and their behaviour as gamma-negative option positions — and derives analytical formulas for risk and value assessment.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Session 3 -->
+                            <div class="program__session">
+                                <div class="program__session-header">
+                                    <span class="program__session-date">April 17, 2025</span>
+                                    <span class="program__session-theme">Lending-Borrowing Protocols</span>
+                                </div>
+                                <div class="program__talks">
+
+                                    <div class="program__talk">
+                                        <div class="program__talk-meta">
+                                            <span class="program__talk-time">9:00 – 10:00</span>
+                                            <div class="program__talk-info">
+                                                <span class="program__talk-speaker">Louis Latournerie</span>
+                                                <span class="program__talk-affil">CMAP, CREST</span>
+                                            </div>
+                                            <a href="#" class="program__talk-slides" title="Download slides">
+                                                <svg aria-hidden="true"><use href="#slides-icon"></use></svg>
+                                                Slides
+                                            </a>
+                                        </div>
+                                        <p class="program__talk-title">Risk Modelling in Aave</p>
+                                        <p class="program__talk-abstract">A detailed formalisation of the lending, borrowing, and liquidation mechanisms of the Aave protocol, built from its open-source implementation. A mathematical model of liquidation risk is proposed — including stochastic approximations — aimed at efficient simulation and risk management.</p>
+                                    </div>
+
+                                    <div class="program__talk">
+                                        <div class="program__talk-meta">
+                                            <span class="program__talk-time">10:00 – 11:00</span>
+                                            <div class="program__talk-info">
+                                                <span class="program__talk-speaker">Adrien Laversanne-Finot</span>
+                                                <span class="program__talk-affil">Morpho</span>
+                                            </div>
+                                            <a href="#" class="program__talk-slides" title="Download slides">
+                                                <svg aria-hidden="true"><use href="#slides-icon"></use></svg>
+                                                Slides
+                                            </a>
+                                        </div>
+                                        <p class="program__talk-title">The Morpho Protocol</p>
+                                        <p class="program__talk-abstract">An explanation of Morpho Blue — a minimal, immutable lending protocol on Ethereum. The talk covers its design philosophy, how it differentiates from Aave, and how it externalises risk management through the concept of vaults.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div><!-- /.news-card__program -->
+                </article>
+
             </div>
         </div>
     </section>
@@ -249,6 +413,23 @@
             <p>Contact us: <a href="mailto:blockfi@cmap.polytechnique.fr">blockfi@cmap.polytechnique.fr</a></p>
         </div>
     </footer>
+
+    <script>
+      // Expandable news cards
+      document.querySelectorAll('.news-card--expandable').forEach(card => {
+        const btn    = card.querySelector('.news-card__toggle');
+        const panel  = card.querySelector('.news-card__program');
+        const label  = btn.querySelector('.news-card__toggle-label');
+
+        btn.addEventListener('click', () => {
+          const isOpen = card.dataset.expanded === 'true';
+          card.dataset.expanded   = String(!isOpen);
+          btn.setAttribute('aria-expanded', String(!isOpen));
+          panel.setAttribute('aria-hidden', String(isOpen));
+          label.textContent = isOpen ? 'View programme' : 'Close programme';
+        });
+      });
+    </script>
 
 </body>
 </html>
